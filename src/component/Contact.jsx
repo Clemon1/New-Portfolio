@@ -9,6 +9,7 @@ import {
   Icon,
   Input,
   Text,
+  Link,
   Textarea,
   VStack,
 } from "@chakra-ui/react";
@@ -55,10 +56,18 @@ const ContactPage = () => {
             justifyContent={"center"}
             spacing={3}
             padding={[4]}>
-            <Icon as={BsGithub} color={"#ffffff"} fontSize={28} />
-            <Icon as={BsLinkedin} color={"#ffffff"} fontSize={28} />
-            <Icon as={BsInstagram} color={"#ffffff"} fontSize={28} />
-            <Icon as={BsTwitter} color={"#ffffff"} fontSize={28} />
+            <Link href='https://github.com/Clemon1'>
+              <Icon as={BsGithub} color={"#ffffff"} fontSize={28} />
+            </Link>
+            <Link href='https://www.linkedin.com/in/clemon-ezeh-50b4b3173'>
+              <Icon as={BsLinkedin} color={"#ffffff"} fontSize={28} />
+            </Link>
+            <Link href='https://www.instagram.com/__clemon/?next=%2F&hl=en'>
+              <Icon as={BsInstagram} color={"#ffffff"} fontSize={28} />
+            </Link>
+            <Link href='https://twitter.com/Clemon_Ezeh'>
+              <Icon as={BsTwitter} color={"#ffffff"} fontSize={28} />
+            </Link>
           </HStack>
         </Flex>
         <Flex width={"full"}>

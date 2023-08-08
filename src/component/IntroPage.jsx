@@ -1,4 +1,13 @@
-import { Box, Button, Flex, Icon, Image, Text, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Flex,
+  Icon,
+  Image,
+  Link,
+  Text,
+  VStack,
+} from "@chakra-ui/react";
 import Typewriter from "typewriter-effect";
 import reactLogo from "../assets/react.svg";
 import jsLogo from "../assets/icons8-javascript.svg";
@@ -84,10 +93,18 @@ const IntroPage = () => {
             justifyContent={"center"}
             spacing={3}
             padding={4}>
-            <Icon as={BsGithub} color={"#ffffff"} fontSize={28} />
-            <Icon as={BsLinkedin} color={"#ffffff"} fontSize={28} />
-            <Icon as={BsInstagram} color={"#ffffff"} fontSize={28} />
-            <Icon as={BsTwitter} color={"#ffffff"} fontSize={28} />
+            <Link href='https://github.com/Clemon1'>
+              <Icon as={BsGithub} color={"#ffffff"} fontSize={28} />
+            </Link>
+            <Link href='https://www.linkedin.com/in/clemon-ezeh-50b4b3173'>
+              <Icon as={BsLinkedin} color={"#ffffff"} fontSize={28} />
+            </Link>
+            <Link href='https://www.instagram.com/__clemon/?next=%2F&hl=en'>
+              <Icon as={BsInstagram} color={"#ffffff"} fontSize={28} />
+            </Link>
+            <Link href='https://twitter.com/Clemon_Ezeh'>
+              <Icon as={BsTwitter} color={"#ffffff"} fontSize={28} />
+            </Link>
           </VStack>
         </>
       </Flex>
