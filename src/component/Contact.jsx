@@ -28,7 +28,7 @@ const ContactPage = () => {
           Contact Me<span className='dot'>.</span>
         </Text>
 
-        <Divider width={["50%", "50%", "70%", "80%", "85%"]} />
+        <Divider width={["50%", "50%", "70%", "80%", "80%"]} />
       </Flex>
 
       <Flex
