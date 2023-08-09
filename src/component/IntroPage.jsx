@@ -16,6 +16,7 @@ import nodeLogo from "../assets/icons8-nodejs.svg";
 import mongoLogo from "../assets/icons8-mongodb.svg";
 import expressLogo from "../assets/icons8-express-js.svg";
 import goLogo from "../assets/icons8-golang.svg";
+import { MdEmail } from "react-icons/md";
 import { BsGithub, BsLinkedin, BsInstagram, BsTwitter } from "react-icons/bs";
 
 const IntroPage = () => {
@@ -93,6 +94,9 @@ const IntroPage = () => {
             justifyContent={"center"}
             spacing={3}
             padding={4}>
+            <Link href='mailto:clemonezeh@gmail.com'>
+              <Icon as={MdEmail} color={"#ffffff"} fontSize={28} />
+            </Link>
             <Link href='https://github.com/Clemon1'>
               <Icon as={BsGithub} color={"#ffffff"} fontSize={28} />
             </Link>

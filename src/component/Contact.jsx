@@ -13,7 +13,9 @@ import {
   Textarea,
   VStack,
 } from "@chakra-ui/react";
+import { MdEmail } from "react-icons/md";
 import { BsGithub, BsLinkedin, BsInstagram, BsTwitter } from "react-icons/bs";
+
 const ContactPage = () => {
   return (
     <Box
@@ -56,6 +58,9 @@ const ContactPage = () => {
             justifyContent={"center"}
             spacing={3}
             padding={[4]}>
+            <Link href='mailto:clemonezeh@gmail.com'>
+              <Icon as={MdEmail} color={"#ffffff"} fontSize={28} />
+            </Link>
             <Link href='https://github.com/Clemon1'>
               <Icon as={BsGithub} color={"#ffffff"} fontSize={28} />
             </Link>
