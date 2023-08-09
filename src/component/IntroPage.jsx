@@ -115,7 +115,7 @@ const IntroPage = () => {
         justifyContent={"center"}
         alignItems={"center"}>
         <Box
-          className='logo1'
+          className='logo2'
           width={"48%"}
           position={"relative"}
           height={"40vh"}
