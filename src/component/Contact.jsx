@@ -1,9 +1,11 @@
+import { useState } from "react";
 import {
   Box,
   Button,
   Divider,
   Flex,
   FormControl,
+  useToast,
   FormLabel,
   HStack,
   Icon,
@@ -15,8 +17,47 @@ import {
 } from "@chakra-ui/react";
 import { MdEmail } from "react-icons/md";
 import { BsGithub, BsLinkedin, BsInstagram, BsTwitter } from "react-icons/bs";
-
+import axios from "axios";
 const ContactPage = () => {
+  const [fullname, setFullname] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  const body = {
+    fullname,
+    email,
+    subject,
+    message,
+  };
+  const toast = useToast();
+  const sendEmail = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await axios.post(
+        "https://email-service-zrea.onrender.com/send",
+        body,
+      );
+      const data = await res.data;
+
+      toast({
+        title: "Message sent.",
+        status: "success",
+        position: "top-right",
+        duration: 9000,
+        isClosable: true,
+      });
+    } catch (err) {
+      console.log(err);
+      toast({
+        title: "Something went wrong",
+        status: "error",
+        position: "top-right",
+        duration: 9000,
+        isClosable: true,
+      });
+    }
+  };
   return (
     <Box
       width={"full"}
@@ -76,7 +117,7 @@ const ContactPage = () => {
           </HStack>
         </Flex>
         <Flex width={"full"}>
-          <form>
+          <form onSubmit={sendEmail}>
             <VStack
               width={"100%"}
               spacing={4}
@@ -89,6 +130,7 @@ const ContactPage = () => {
                 <FormControl id='name' isRequired>
                   <FormLabel>Full Name</FormLabel>
                   <Input
+                    onChange={(e) => setFullname(e.target.value)}
                     type='text'
                     bg={"#001d3d"}
                     rounded={18}
@@ -99,6 +141,7 @@ const ContactPage = () => {
                 <FormControl isRequired>
                   <FormLabel>Email</FormLabel>
                   <Input
+                    onChange={(e) => setEmail(e.target.value)}
                     bg={"#001d3d"}
                     type='email'
                     rounded={18}
@@ -110,6 +153,7 @@ const ContactPage = () => {
               <FormControl id='subject' isRequired>
                 <FormLabel>Subject</FormLabel>
                 <Input
+                  onChange={(e) => setSubject(e.target.value)}
                   bg={"#001d3d"}
                   type='text'
                   rounded={18}
@@ -120,6 +164,7 @@ const ContactPage = () => {
               <FormControl isRequired>
                 <FormLabel>Message</FormLabel>
                 <Textarea
+                  onChange={(e) => setMessage(e.target.value)}
                   bg={"#001d3d"}
                   rounded={18}
                   placeholder='Your message'
