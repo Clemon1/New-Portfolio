@@ -26,11 +26,6 @@ import aura from "../assets/aura.png";
 const Portfolio = () => {
   const webData = [
     {
-      image: adminNano,
-      title: "NanoHostNG Admin Panel",
-      URL: "http://admin.nanohostng.com/",
-    },
-    {
       image: Anneki,
       title: "Anneki",
       URL: "https://anneki.netlify.app/",
