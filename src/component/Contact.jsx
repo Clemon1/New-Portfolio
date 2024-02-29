@@ -38,7 +38,7 @@ const ContactPage = () => {
         "https://email-service-zrea.onrender.com/send",
         body,
       );
-      const data = await res.data;
+      await res.data;
 
       toast({
         title: "Message sent.",
@@ -61,13 +61,19 @@ const ContactPage = () => {
   return (
     <Box
       width={"full"}
-      height={["fit-content", "fit-content", "100vh", "100vh", "100vh"]}
+      height={[
+        "fit-content",
+        "fit-content",
+        "fit-content",
+        "fit-content",
+        "fit-content",
+      ]}
       py={4}>
       <Flex width={"full"} alignItems={"center"}>
         <Text
           color={"#ebecf3"}
           fontWeight={"700"}
-          fontSize={["25px", "25px", "30px", "33px", "35px"]}
+          fontSize={["25px", "25px", "30px", "30px", "30px"]}
           paddingBottom={10}>
           Contact Me<span className='dot'>.</span>
         </Text>
@@ -83,7 +89,6 @@ const ContactPage = () => {
         <Flex
           width={["full", "full", "85%", "80%", "75%"]}
           flexDirection={"column"}
-          alignItems={["flex-end"]}
           py={8}>
           <Text color={"#ffffff"} fontWeight={600} fontSize={26}>
             {" "}

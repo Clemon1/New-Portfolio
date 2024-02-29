@@ -15,7 +15,7 @@ import {
   Tabs,
   Text,
 } from "@chakra-ui/react";
-import adminNano from "../assets/adminNano.png";
+
 import Anneki from "../assets/Anneki.png";
 import findMe from "../assets/findMe.png";
 import hubNano from "../assets/hubNano.png";
@@ -57,7 +57,7 @@ const Portfolio = () => {
     },
   ];
   return (
-    <Box width={"full"} height={"150vh"} py={4}>
+    <Box width={"full"} height={"fit-content"} py={4}>
       <Flex width={"full"} alignItems={"center"}>
         <Text
           color={"#ebecf3"}

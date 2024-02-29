@@ -16,7 +16,7 @@ const AboutPage = () => {
       </Flex>
       <Flex
         width={"full"}
-        height={"100vh"}
+        height={"fit-content"}
         direction={["column", "column", "column", "row", "row"]}>
         <Flex width={"full"} direction={"column"} alignItems={"flex-start"}>
           <Image width={"full"} height={"75%"} src={blob} />

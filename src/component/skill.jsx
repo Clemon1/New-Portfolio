@@ -29,7 +29,7 @@ const SkillPage = () => {
         <Flex
           bg={"#001d3d"}
           width={["full"]}
-          height={"50vh"}
+          height={"fit-content"}
           padding={4}
           direction={"column"}
           rounded={"3xl"}>
@@ -37,6 +37,7 @@ const SkillPage = () => {
             color={"#ebecf3"}
             fontSize={25}
             fontWeight={700}
+            py={5}
             textAlign={"center"}>
             Frontend developer
           </Text>
@@ -67,11 +68,23 @@ const SkillPage = () => {
                 <ListIcon as={MdVerified} color='green.500' />
                 GIT
               </ListItem>
+              <ListItem>
+                <ListIcon as={MdVerified} color='green.500' />
+                Zustand
+              </ListItem>
+              <ListItem>
+                <ListIcon as={MdVerified} color='green.500' />
+                React-Query
+              </ListItem>
             </List>
             <List spacing={3} fontSize={18} color={"#ffffff"}>
               <ListItem>
                 <ListIcon as={MdVerified} color='green.500' />
                 React
+              </ListItem>
+              <ListItem>
+                <ListIcon as={MdVerified} color='green.500' />
+                Next JS
               </ListItem>
               <ListItem>
                 <ListIcon as={MdVerified} color='green.500' />
@@ -88,6 +101,10 @@ const SkillPage = () => {
               <ListItem>
                 <ListIcon as={MdVerified} color='green.500' />
                 Redux-Toolkit
+              </ListItem>
+              <ListItem>
+                <ListIcon as={MdVerified} color='green.500' />
+                RTK-Query
               </ListItem>
             </List>
           </Flex>
