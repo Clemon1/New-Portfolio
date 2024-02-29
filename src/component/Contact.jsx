@@ -95,9 +95,12 @@ const ContactPage = () => {
             Let&apos;s talk about everything!
           </Text>
           <Text color={"#ffffff"} fontSize={18} fontWeight={300}>
-            Feel free to get in touch with me. I am always open <br />
-            to discussing new projects, creative ideas or <br /> opportunities
-            to be part of your vision.
+            Feel free to get in touch with me. I am always open to discussing
+            new projects, creative ideas or opportunities to be part of your
+            vision.
+            <br /> I also take coding classes on Frontend (Html, Css, Javascript
+            & React) and Backend (Node JS, Express & MongoDB). If you are
+            interested please leave a message.
           </Text>
           <HStack
             width={"full"}
