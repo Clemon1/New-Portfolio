@@ -155,6 +155,10 @@ const SkillPage = () => {
               </ListItem>
               <ListItem>
                 <ListIcon as={MdVerified} color='green.500' />
+                Redis
+              </ListItem>
+              <ListItem>
+                <ListIcon as={MdVerified} color='green.500' />
                 MySQL
               </ListItem>
               <ListItem>
