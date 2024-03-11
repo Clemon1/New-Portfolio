@@ -31,7 +31,7 @@ const AboutPage = () => {
             fontWeight={300}
             color={"#F3FAFF"}
             lineHeight={"27px"}>
-            I&apos;m an experienced Full-Stack Developer with 3 years of
+            I&apos;m an experienced Full-Stack Developer with 4 years of
             experience creating innovative web and mobile applications.
             <br /> I&apos;ve worked on diverse projects, including e-commerce
             platforms, social media apps, and data-driven dashboards.
