@@ -16,7 +16,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 
-import Anneki from "../assets/Anneki.png";
+import animeworld from "../assets/animeworld.png";
 import findMe from "../assets/findMe.png";
 import hubNano from "../assets/hubNano.png";
 import EventO from "../assets/EventO.png";
@@ -26,9 +26,9 @@ import aura from "../assets/aura.png";
 const Portfolio = () => {
   const webData = [
     {
-      image: Anneki,
-      title: "Anneki",
-      URL: "https://anneki.netlify.app/",
+      image: animeworld,
+      title: "AnimeWorld",
+      URL: "https://animeworlld.netlify.app/",
     },
     {
       image: greyAfri,
