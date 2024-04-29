@@ -19,12 +19,17 @@ import {
 import animeworld from "../assets/animeworld.png";
 import findMe from "../assets/findMe.png";
 import hubNano from "../assets/hubNano.png";
-import EventO from "../assets/EventO.png";
+import geekon from "../assets/geekon.png";
 import greyAfri from "../assets/greyAfri.png";
 import aura from "../assets/aura.png";
 
 const Portfolio = () => {
   const webData = [
+    {
+      image: geekon,
+      title: "GeekonTechnologies",
+      URL: "https://geekontech.netlify.app/",
+    },
     {
       image: animeworld,
       title: "AnimeWorld",
@@ -49,11 +54,6 @@ const Portfolio = () => {
       image: findMe,
       title: "FindMe",
       URL: "https://findme-truffle-966812.netlify.app/",
-    },
-    {
-      image: EventO,
-      title: "EventO",
-      URL: "https://eventoinfo.netlify.app",
     },
   ];
   return (
