@@ -19,6 +19,7 @@ import { MdEmail } from "react-icons/md";
 import { BsGithub, BsLinkedin, BsInstagram, BsTwitter } from "react-icons/bs";
 import axios from "axios";
 const ContactPage = () => {
+  const [isLoading, setLoading] = useState(false);
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -34,11 +35,13 @@ const ContactPage = () => {
   const sendEmail = async (e) => {
     e.preventDefault();
     try {
+      setLoading(true);
       const res = await axios.post(
         "https://email-service-zrea.onrender.com/send",
         body,
       );
       await res.data;
+      setLoading(false);
 
       toast({
         title: "Message sent.",
@@ -85,6 +88,7 @@ const ContactPage = () => {
         width={"full"}
         height={"fit-content"}
         gap={7}
+        flex={1}
         direction={["column", "column", "row", "row", "row"]}>
         <Flex
           width={["full", "full", "85%", "80%", "75%"]}
@@ -178,18 +182,34 @@ const ContactPage = () => {
                   placeholder='Your message'
                 />
               </FormControl>
-
-              <Button
-                width={"fit-content"}
-                rounded={18}
-                float={"right"}
-                type='submit'
-                bg={"#000814"}
-                border={"2px solid #00c6b9"}
-                color={"#ffffff"}
-                colorScheme='cyan'>
-                Send Message
-              </Button>
+              {isLoading ? (
+                <Button
+                  width={"fit-content"}
+                  rounded={18}
+                  float={"right"}
+                  type='submit'
+                  bg={"#000814"}
+                  border={"2px solid #00c6b9"}
+                  color={"#ffffff"}
+                  colorScheme='cyan'
+                  isLoading
+                  loadingText='Submitting'
+                  variant='outline'>
+                  Send Message
+                </Button>
+              ) : (
+                <Button
+                  width={"fit-content"}
+                  rounded={18}
+                  float={"right"}
+                  type='submit'
+                  bg={"#000814"}
+                  border={"2px solid #00c6b9"}
+                  color={"#ffffff"}
+                  colorScheme='cyan'>
+                  Send Message
+                </Button>
+              )}
             </VStack>
           </form>
         </Flex>

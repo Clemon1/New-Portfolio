@@ -68,7 +68,7 @@ const Portfolio = () => {
         </Text>
         <Divider />
       </Flex>
-      <Flex width={"full"}>
+      <Flex width={"full"} flex={1}>
         <Tabs
           width={"full"}
           position='relative'
