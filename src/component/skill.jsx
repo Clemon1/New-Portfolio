@@ -141,6 +141,10 @@ const SkillPage = () => {
               </ListItem>
               <ListItem>
                 <ListIcon as={MdVerified} color='green.500' />
+                Nest JS
+              </ListItem>
+              <ListItem>
+                <ListIcon as={MdVerified} color='green.500' />
                 Golang
               </ListItem>
               <ListItem>
@@ -163,11 +167,11 @@ const SkillPage = () => {
               </ListItem>
               <ListItem>
                 <ListIcon as={MdVerified} color='green.500' />
-                Heroku
+                Prisma
               </ListItem>
               <ListItem>
                 <ListIcon as={MdVerified} color='green.500' />
-                AWS
+                Sequelize
               </ListItem>
             </List>
           </Flex>
