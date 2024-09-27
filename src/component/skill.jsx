@@ -133,11 +133,15 @@ const SkillPage = () => {
             <List spacing={3} fontSize={18} color={"#F3FAFF"}>
               <ListItem>
                 <ListIcon as={MdVerified} color='green.500' />
-                NodeJs
+                NodeJS
               </ListItem>
               <ListItem>
                 <ListIcon as={MdVerified} color='green.500' />
                 Express
+              </ListItem>
+              <ListItem>
+                <ListIcon as={MdVerified} color='green.500' />
+                Typescript
               </ListItem>
               <ListItem>
                 <ListIcon as={MdVerified} color='green.500' />
@@ -164,6 +168,10 @@ const SkillPage = () => {
               <ListItem>
                 <ListIcon as={MdVerified} color='green.500' />
                 MySQL
+              </ListItem>
+              <ListItem>
+                <ListIcon as={MdVerified} color='green.500' />
+                PostgreSQL
               </ListItem>
               <ListItem>
                 <ListIcon as={MdVerified} color='green.500' />
