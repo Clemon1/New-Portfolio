@@ -19,6 +19,8 @@ import {
 } from "@chakra-ui/react";
 import { TiInfoLarge } from "react-icons/ti";
 
+import bookinito from "../assets/Bookinito.png";
+
 import animeworld from "../assets/shadowInu.png";
 import findMe from "../assets/findMe.png";
 import hubNano from "../assets/hubNano.png";
@@ -29,6 +31,12 @@ import apt from "../assets/aptresponse.png";
 
 const Portfolio = () => {
   const webData = [
+    {
+      image: bookinito,
+      title: "Bookinito",
+      URL: "https://bookinito.netlify.app/",
+      info: "A Fullstack Hotel Administrator application, using MERN Stack and Typescript with features like, monthly and yearly revenue analysis, user analysis, room availability etc",
+    },
     {
       image: apt,
       title: "aptResponse",
@@ -45,7 +53,7 @@ const Portfolio = () => {
       image: animeworld,
       title: "Shadow Inu",
       URL: "https://shadowinu-490cc5.netlify.app/",
-      info: "This is website I made for fun with my student for educational purposes to teach my student to become a better developer",
+      info: "This is website I made for fun with my student for educational purposes to teach my student to become a better frontend developer",
     },
     {
       image: greyAfri,
