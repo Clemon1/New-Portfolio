@@ -35,7 +35,7 @@ const Portfolio = () => {
       image: bookinito,
       title: "Bookinito",
       URL: "https://bookinito.netlify.app/",
-      info: "A Fullstack Hotel Administrator application, using MERN Stack and Typescript with features like, monthly and yearly revenue analysis, user analysis, room availability etc. To access the application use type email:`admin@email.com`, password:`123456`",
+      info: "A Fullstack Hotel Administrator application, using MERN Stack and Typescript with features like, monthly and yearly revenue analysis, user analysis, room availability etc. To access the application use details email:`admin@email.com`, password:`123456`",
     },
     {
       image: apt,
