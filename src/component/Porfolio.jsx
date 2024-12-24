@@ -28,6 +28,7 @@ import geekon from "../assets/geekon.png";
 import greyAfri from "../assets/greyAfri.png";
 import aura from "../assets/aura.png";
 import apt from "../assets/aptresponse.png";
+import hotela from "../assets/hotela.png";
 
 const Portfolio = () => {
   const webData = [
@@ -38,11 +39,18 @@ const Portfolio = () => {
       info: "A Fullstack Hotel Administrator application, using MERN Stack and Typescript with features like, monthly and yearly revenue analysis, user analysis, room availability etc. To access the application use details email:`admin@email.com`, password:`123456`",
     },
     {
+      image: hotela,
+      title: "Hotela",
+      URL: "https://hotela.vercel.app/",
+      info: "Hotela is a user-friendly hotel booking app designed to simplify travel planning. With an extensive selection of accommodations, intuitive search filters, and secure booking options, Hotela helps you find and reserve the perfect stay effortlessly. Whether you're traveling for business or leisure, Hotela ensures a seamless and personalized booking experience at your fingertips",
+    },
+    {
       image: apt,
       title: "aptResponse",
       URL: "https://aptresponse.io/",
       info: "I contributed to the development of AptResponse, where I was responsible for implementing new features across both the frontend and backend of the admin dashboard and various other modules of the application. ",
     },
+
     {
       image: geekon,
       title: "GeekonTechnologies",
@@ -148,7 +156,10 @@ const Portfolio = () => {
                         <TiInfoLarge size={17} />
                       </Button>
                     </Tooltip>
-                    <Link href={web.URL}>
+                    <Link
+                      href={web.URL}
+                      target='_blank'
+                      rel='noopener noreferrer'>
                       <Image src={web.image} borderRadius='lg' zIndex={50} />
 
                       <CardBody p={1}>
