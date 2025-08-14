@@ -25,13 +25,19 @@ import animeworld from "../assets/shadowInu.png";
 import findMe from "../assets/findMe.png";
 import hubNano from "../assets/hubNano.png";
 import geekon from "../assets/geekon.png";
-import greyAfri from "../assets/greyAfri.png";
+import crypton from "../assets/crypton.png";
 import aura from "../assets/aura.png";
 import apt from "../assets/aptresponse.png";
 import hotela from "../assets/hotela.png";
 
 const Portfolio = () => {
   const webData = [
+    {
+      image: crypton,
+      title: "Cryptomadness Platform",
+      URL: "https://www.cryptomadness.info/",
+      info: "Welcome to CryptoMadness – Where Smart Money Meets Madness. We don’t just follow trends — we predict them. Our platform is built for traders, investors, and visionaries who demand more than basic charts and market noise. We blend AI-powered signals, real-time insights, and a global community into one ecosystem — empowering users to make smarter, faster, bolder moves in crypto and forex.We blend AI-powered signals, real-time insights, and a global community into one ecosystem — empowering users to make smarter, faster, bolder moves in crypto and forex.",
+    },
     {
       image: bookinito,
       title: "Bookinito",
@@ -63,12 +69,7 @@ const Portfolio = () => {
       URL: "https://shadowinu-490cc5.netlify.app/",
       info: "This is website I made for fun with my student for educational purposes to teach my student to become a better frontend developer",
     },
-    {
-      image: greyAfri,
-      title: "GreyAfrique",
-      URL: "https://greyafrique.com/",
-      info: "",
-    },
+
     {
       image: hubNano,
       title: "NanoHostNG",
