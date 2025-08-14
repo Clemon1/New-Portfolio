@@ -3,7 +3,8 @@ import Typewriter from "typewriter-effect";
 import Lottie from "lottie-react";
 import RobotWave from "../assets/robotWave.json";
 import { MdEmail } from "react-icons/md";
-import { BsGithub, BsLinkedin, BsInstagram, BsTwitter } from "react-icons/bs";
+import { FaXTwitter } from "react-icons/fa6";
+import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 
 const IntroPage = () => {
   return (
@@ -93,7 +94,7 @@ const IntroPage = () => {
               <Icon as={BsInstagram} color={"#ffffff"} fontSize={28} />
             </Link>
             <Link href='https://twitter.com/Clemon_Ezeh'>
-              <Icon as={BsTwitter} color={"#ffffff"} fontSize={28} />
+              <Icon as={FaXTwitter} color={"#ffffff"} fontSize={28} />
             </Link>
           </VStack>
         </>
