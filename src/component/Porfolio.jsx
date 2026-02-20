@@ -19,7 +19,7 @@ import {
 } from "@chakra-ui/react";
 import { TiInfoLarge } from "react-icons/ti";
 
-import bookinito from "../assets/Bookinito.png";
+import hedge from "../assets/hedge.png";
 
 import animeworld from "../assets/shadowInu.png";
 import findMe from "../assets/findMe.png";
@@ -39,10 +39,10 @@ const Portfolio = () => {
       info: "Welcome to CryptoMadness – Where Smart Money Meets Madness. We don’t just follow trends — we predict them. Our platform is built for traders, investors, and visionaries who demand more than basic charts and market noise. We blend AI-powered signals, real-time insights, and a global community into one ecosystem — empowering users to make smarter, faster, bolder moves in crypto and forex.We blend AI-powered signals, real-time insights, and a global community into one ecosystem — empowering users to make smarter, faster, bolder moves in crypto and forex.",
     },
     {
-      image: bookinito,
-      title: "Bookinito",
-      URL: "https://bookinito.netlify.app/",
-      info: "A Fullstack Hotel Administrator application, using MERN Stack and Typescript with features like, monthly and yearly revenue analysis, user analysis, room availability etc. To access the application use details email:`admin@email.com`, password:`123456`",
+      image: hedge,
+      title: "Hedge Impact Parnters",
+      URL: "https://www.hedgeimpact.org/",
+      info: "Hedge Impact Partners is a development support organization committed to strengthening organizations and communities to deliver lasting change. Registered in Nigeria, we bridge the gap between international organizations, governments, civil society, and beneficiaries.",
     },
     {
       image: hotela,
