@@ -16,7 +16,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { MdEmail } from "react-icons/md";
-import { FaXTwitter } from "react-icons/fa6";
+
 import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 import axios from "axios";
 const ContactPage = () => {
@@ -123,9 +123,6 @@ const ContactPage = () => {
             </Link>
             <Link href='https://www.instagram.com/__clemon/?next=%2F&hl=en'>
               <Icon as={BsInstagram} color={"#ffffff"} fontSize={28} />
-            </Link>
-            <Link href='https://twitter.com/Clemon_Ezeh'>
-              <Icon as={FaXTwitter} color={"#ffffff"} fontSize={28} />
             </Link>
           </HStack>
         </Flex>
